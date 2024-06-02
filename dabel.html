@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Červený Ďábel</title>
+    <link rel="stylesheet" href="dabel_css.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Peter Kutka Fanpage</h1>
+    </div>
+    <nav>
+        <ul class="menu">
+            <li class="ll"><a href="index.html">Peter Kutka Funpage</a></li>
+            <li><a href="merch.html">Merch</a></li>
+            <li><a href="#">Červený Ďábel</a></li>
+            <li><a href="https://www.youtube.com/@peterkutkaofficial" target="_blank">Tvorba</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <div class="produkty">
+        <div class="item">
+            <img src="dabel.png" style="max-height: 400px;">
+            <h3>Červený Ďábel – Pivo Petra Kutku</h3>
+            <select class="color" id="options" onchange="document.getElementById('opt' + this.value).checked = true;"
+                name="dropdown">
+                <option value="" disabled selected>Počet:</option>
+                <option value="1">6</option>
+                <option value="2">12</option>
+                <option value="3">24</option>
+                <input type="radio" id="opt1" name="content-options" class="radio-options">
+                <div class="content content1">
+                    <h2 class="skrt">15,60 €</h2>
+                    <h2 class="cena">7,80 €</h2>
+                </div>
+
+                <input type="radio" id="opt2" name="content-options" class="radio-options">
+                <div class="content content2">
+                    <h2 class="skrt">29,99 €</h2>
+                    <h2 class="cena">14,99 €</h2>
+                </div>
+
+                <input type="radio" id="opt3" name="content-options" class="radio-options">
+                <div class="content content3">
+                    <h2 class="skrt">58,99 €</h2>
+                    <h2 class="cena">29,49 €</h2>
+                </div>
+                <button class="button" type="button" onclick="alert('Produkt bol vložený do košíka')">Vložiť do
+                    košíka</button>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Nepodporujeme pitie alkoholu</h2>
+    </div>
+</body>
+
+</html>

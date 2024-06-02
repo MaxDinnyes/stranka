@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Labels on Top</title>
+    <style>
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical; /* Only applies to textareas */
+        }
+        .textarea-box {
+            height: 200px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="address" class="form-label">Address</label>
+            <textarea id="address" name="address" class="form-control textarea-box" placeholder="Enter your address" required></textarea>
+        </div>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
